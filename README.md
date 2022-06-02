@@ -7,4 +7,3 @@ My project for posting articles
 Tech.specifications - Spring/Sprig boot,Thymeleaf,Html,PostgreSQL
 <br> In the future I will connect Spring Security
 <br>
-![App Screenshot](https://user-images.githubusercontent.com/57506521/171618628-13f77aa6-4688-4a80-864b-a0bf579daa74.png)
