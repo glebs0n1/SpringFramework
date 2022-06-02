@@ -3,5 +3,4 @@
 My project for posting articles
 <br> In this project, I'm testing Spring Security, my users can publish articles after logging into the site :)
 <br>
-In Shopping-List project i create 
-
+<h3>In Shopping-List project</h3>i create a shopping list to be bought in the store and save it to the database
