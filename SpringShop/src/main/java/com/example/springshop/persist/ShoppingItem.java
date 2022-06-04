@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "shopping_items")
-//Yes,I use in this project Getter and Setter, although I could use Lombok, I know it :)
+//Yes,I use in this project Getter and Setter, although I could use @Data  I know it :)
 public class ShoppingItem {
 
     @Id
