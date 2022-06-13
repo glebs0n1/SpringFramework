@@ -56,7 +56,7 @@ public class AccountControllerIT extends ITBase {
     assertThat(accountRepository.findById(3L).get().getName())
         .isEqualTo("More flexible");
     assertThat(accountRepository.findById(3L).get().getDescription())
-        .isEqualTo("Upgraded account for Ernestas");
+        .isEqualTo("Upgraded account for Phone");
   }
 
   @Test
@@ -68,7 +68,7 @@ public class AccountControllerIT extends ITBase {
         .body(PhoneNumberCreate.builder()
             .activeTo(LocalDateTime.now().plus(Duration.ofDays(20)))
             .activeFrom(LocalDateTime.now())
-            .phoneDigits("+37061432579")
+            .phoneDigits("+37099999999")
             .build()
         )
         .post("http://localhost:8081/accounts/3/phone-numbers")
