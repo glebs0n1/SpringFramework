@@ -21,7 +21,7 @@ public class PhoneNumberControllerIT extends ITBase {
             .activeTo(LocalDateTime.now().plus(Duration.ofDays(50)))
             .name("New order")
             .build())
-        .post("http://localhost:9001/phone-numbers/4/services/1/order")
+        .post("http://localhost:8081/phone-numbers/4/services/1/order")
         .then()
         .statusCode(201);
 
@@ -38,7 +38,7 @@ public class PhoneNumberControllerIT extends ITBase {
             .activeTo(LocalDateTime.now().plus(Duration.ofDays(50)))
             .name("New order")
             .build())
-        .put("http://localhost:9001/phone-numbers/4/services/5")
+        .put("http://localhost:8081/phone-numbers/4/services/5")
         .then()
         .statusCode(200);
 
@@ -49,7 +49,7 @@ public class PhoneNumberControllerIT extends ITBase {
     RestAssured.given()
         .accept(ContentType.JSON)
         .contentType(ContentType.JSON)
-        .post("http://localhost:9001/phone-numbers/4/ordered-services/5/terminate")
+        .post("http://localhost:8081/phone-numbers/4/ordered-services/5/terminate")
         .then()
         .statusCode(200);
   }
@@ -59,7 +59,7 @@ public class PhoneNumberControllerIT extends ITBase {
     RestAssured.given()
         .accept(ContentType.JSON)
         .contentType(ContentType.JSON)
-        .get("http://localhost:9001/phone-numbers")
+        .get("http://localhost:8081/phone-numbers")
         .then()
         .statusCode(200);
   }
@@ -69,7 +69,7 @@ public class PhoneNumberControllerIT extends ITBase {
     RestAssured.given()
         .accept(ContentType.JSON)
         .contentType(ContentType.JSON)
-        .get("http://localhost:9001/phone-numbers/4")
+        .get("http://localhost:8081/phone-numbers/4")
         .then()
         .statusCode(200);
   }
