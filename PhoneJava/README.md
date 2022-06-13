@@ -1,5 +1,3 @@
-Main features
-
 Created API based on provided entities
 
 * Customer API
