@@ -36,11 +36,11 @@ public class CustomerControllerIT extends ITBase {
 
     Customer customer = customerRepository.saveAndFlush(
         Customer.builder()
-            .companyCode("Zenitechas")
-            .companyName("Zenitech")
-            .personalCode("35712038328")
-            .name("Ernestas")
-            .surname("Seminogovas")
+            .companyCode("GoogleCode")
+            .companyName("Google")
+            .personalCode("99999999999")
+            .name("Google")
+            .surname("Google")
             .customerAccounts(new ArrayList<>())
             .build()
     );
@@ -88,25 +88,6 @@ public class CustomerControllerIT extends ITBase {
   }
 
   @Test
-  public void whenUpdateCustomerOk() {
-
-    RestAssured.given()
-        .accept(ContentType.JSON)
-        .contentType(ContentType.JSON)
-        .body(Customer.builder()
-            .companyCode("Bitė")
-            .companyName("Bitė")
-            .surname("Žaisminogovas")
-            .name("Tomas")
-            .personalCode("35712038328")
-            .build())
-        .put("http://localhost:8081/customers/2")
-        .then()
-        .statusCode(200);
-
-  }
-
-  @Test
   public void whenGetCustomerByIdOk() {
 
     RestAssured.given()
@@ -137,8 +118,8 @@ public class CustomerControllerIT extends ITBase {
 
     RestAssured.given()
         .body(Account.builder()
-            .description("New account created for user Ernestas")
-            .name("ernestas36000")
+            .description("New account created for user Phone1")
+            .name("Phone1Apple")
             .build()
         )
         .accept(ContentType.JSON)
@@ -148,27 +129,4 @@ public class CustomerControllerIT extends ITBase {
         .statusCode(201);
 
   }
-
-  @Test
-  public void whenCreateCustomerOk() {
-    RestAssured.given()
-        .body(
-            CustomerCreate.builder()
-                .companyCode("Zenitech")
-                .companyName("Zenitech")
-                .personalCode("35712038328")
-                .name("Ernestas")
-                .surname("Seminogovas")
-                .build()
-        )
-        .accept(ContentType.JSON)
-        .contentType(ContentType.JSON)
-        .post("http://localhost:8081/customers")
-        .then()
-        .statusCode(201);
-
-    assertThat(customerRepository.findAll().size()).isEqualTo(2);
-
-  }
-
 }
