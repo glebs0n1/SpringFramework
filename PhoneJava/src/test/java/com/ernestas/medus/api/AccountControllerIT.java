@@ -2,9 +2,9 @@ package com.ernestas.medus.api;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.ernestas.medus.entities.account.AccountRepository;
-import com.ernestas.medus.entities.account.AccountUpdate;
-import com.ernestas.medus.entities.phonenumber.PhoneNumberCreate;
+import com.medus.entities.account.AccountRepository;
+importcom.medus.entities.account.AccountUpdate;
+importcom.medus.entities.phonenumber.PhoneNumberCreate;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import java.time.Duration;
