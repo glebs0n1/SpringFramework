@@ -1,6 +1,3 @@
-# medus
-Technical task for Bitė
-
 # Main features
 
 Created API based on provided entities
@@ -52,44 +49,11 @@ POST  | /phone-numers/{phoneId}/ordered-services/{orderedServiceId}/terminate | 
 * Personal code for customers is validated based on Lithuanian personal code rules
 
 * Some date validation exists for ordering services and phone numbers
-
-* POST requests are validated
-
-* Most of the functionality is covered by unit tests
-
-* Initial data is loaded when starting the project
-
-* It is possible to use docker compose to run the project
+ <br>
 
 * CI exists which stores test results and stores the created artifact
 
-# Required dependencies to run the project
-
-* Maven (download from https://maven.apache.org/download.cgi)
-
-* JDK 11 (download from https://adoptopenjdk.net/?variant=openjdk11)
-
-# Unnecessary dependencies 
-
-* Docker (download from https://www.docker.com/products/docker-desktop)
-
-## Steps to run without docker compose
-
-* Navigate to the root of the project
-
-* Run "mvn clean install"
-
-* Run "java -jar target/medus-0.0.1-SNAPSHOT.jar"
-
-* API will become available on http://localhost:9001/
-
-* API Swagger docs are available at http://localhost:9001/swagger-ui.html
-
-* H2 database panel is available at http://localhost:9001/h2-console/
-
-   * jdbc url - jdbc:h2:mem:medus
-   * username - user
-   * password - password
+* API Swagger docs are available at http://localhost:8081/swagger-ui.html
 
 ## Step to run with docker compose
 
@@ -101,21 +65,13 @@ POST  | /phone-numers/{phoneId}/ordered-services/{orderedServiceId}/terminate | 
 
 * Run "docker-compose up"
 
-* API will become available at http://localhost:9001/
+* API will become available at http://localhost:8081/
 
-* API Swagger docs are available at http://localhost:9001/swagger-ui.html
+* API Swagger docs are available at http://localhost:8081/swagger-ui.html
 
-* H2 database panel is available at http://localhost:9001/h2-console/
 
-   * jdbc url - jdbc:h2:mem:medus
-   * username - user
-   * password - password
 
-## CI information
 
-* Using Circle CI with openjdk11 docker image to run tests and store artifacts
-
-* Build and test information is available here https://circleci.com/gh/Bipoliaras/medus
 
 
 
