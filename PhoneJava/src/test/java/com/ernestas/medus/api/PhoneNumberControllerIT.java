@@ -1,7 +1,7 @@
 package com.ernestas.medus.api;
 
-import com.ernestas.medus.entities.orderedservice.OrderedServiceCreate;
-import com.ernestas.medus.entities.orderedservice.OrderedServiceUpdate;
+import com.medus.entities.orderedservice.OrderedServiceCreate;
+import com.medus.medus.entities.orderedservice.OrderedServiceUpdate;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import java.time.Duration;
