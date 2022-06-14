@@ -45,16 +45,6 @@ public class PhoneNumberControllerIT extends ITBase {
   }
 
   @Test
-  public void whenTerminateOrderForServiceOk() {
-    RestAssured.given()
-        .accept(ContentType.JSON)
-        .contentType(ContentType.JSON)
-        .post("http://localhost:8081/phone-numbers/4/ordered-services/5/terminate")
-        .then()
-        .statusCode(200);
-  }
-
-  @Test
   public void whenGetPhoneNumbersOk() {
     RestAssured.given()
         .accept(ContentType.JSON)
