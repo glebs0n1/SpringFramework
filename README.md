@@ -4,7 +4,7 @@ My project for posting articles
 <br> In this project, I'm testing Spring Security, my users can publish articles after logging into the site :)
 <br>
 <h3>In Shopping-List project</h3>I create a shopping list to be bought in the grocery store and save it into the database.
-<h4>Tech.specifications<h4>
+<h4>Tech.specifications</h4>
   Spring/Sprig boot,Thymeleaf,Html,PostgreSQL
 <br> In the future I will connect Spring Security
 <br>
