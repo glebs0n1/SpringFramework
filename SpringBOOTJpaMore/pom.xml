@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>net.javaguides</groupId>
-	<artifactId>springBOOTJpaMore</artifactId>
+	<artifactId>SpringBOOTJpaMore</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-thymeleaf-crud-web-app</name>
+	<name>SpringBOOTJpaMore</name>
 	<description>Demo project for Spring Boot and thymeleaf</description>
 
 	<properties>
